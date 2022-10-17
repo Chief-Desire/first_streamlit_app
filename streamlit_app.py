@@ -39,8 +39,8 @@ try:
     streamlit.error("Please select a fruit to get information.")
   else:
        back_from_function = get_fruityvice_data(fruit_choice)
-       streamlit.dataframe(back_from_fucntion)   
-       except URLError as e:
+       streamlit.dataframe(back_from_fucntion)
+ except URLError as e:
   streamlit.error()
 
 # don't run anything past here while we troubleshoot
